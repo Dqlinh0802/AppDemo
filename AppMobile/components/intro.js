@@ -1,6 +1,8 @@
 import React from 'react';
 import {StyleSheet, View, Text, Image, TouchableOpacity} from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
+import { NavigationContainer } from '@react-navigation/native';
+import Screen1 from './logo'
 
 
 export default class IntroComponent extends React.Component {
@@ -35,7 +37,7 @@ export default class IntroComponent extends React.Component {
   _renderDoneButton = () => {
     return (
         <TouchableOpacity style={styles.buttonCircle} onPress = {() => {
-            this.props.navigation.navigate("Screen1");
+            this.props.navigation.navigate("Home");
             this.setState({isBottomShert: true});
             }}>
             <Text  style={{fontSize: 18, color: 'black'}}>Start</Text>

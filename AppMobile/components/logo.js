@@ -11,12 +11,12 @@ export default Screen1 = () => {
     return(
         <SafeAreaView style={{height: '100%', width: '100%', backgroundColor: '#baffec'}}>
           <View style={{height: '100%', width: '100%', justifyContent: 'center', alignItems: 'center'}}>
-            <View style={{height: '35%', width: '100%', justifyContent: 'flex-end', alignItems: 'center'}}>
+            <View style={{height: '30%', width: '100%', justifyContent: 'flex-end', alignItems: 'center'}}>
               <Text style={{fontSize: 18}}>
                 Splash screen
               </Text>
             </View>
-            <View style={{height: '30%', width: '100%', justifyContent: 'center', alignItems: 'center'}}>
+            <View style={{height: '40%', width: '100%', justifyContent: 'center', alignItems: 'center'}}>
               <View  style={{height: 150, width: 150, borderRadius: 150,
               borderWidth: 2, justifyContent: 'center', alignItems: 'center'}}>
                 <Text style={{fontSize: 18}}>
@@ -24,7 +24,7 @@ export default Screen1 = () => {
                 </Text>
               </View>
             </View>
-            <View style={{height: '35%', width: '100%', justifyContent: 'flex-start', alignItems: 'center'}}>
+            <View style={{height: '30%', width: '100%', justifyContent: 'flex-start', alignItems: 'center'}}>
               <Text style={{fontSize: 18}}>
                 Demo App
               </Text>
