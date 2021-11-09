@@ -13,7 +13,7 @@ export default HomePage = ({ navigation }) => {
         <SafeAreaView style={{height: '100%', width: '100%', backgroundColor: '#baffec'}}>
           <View style={{height: '100%', width: '100%', justifyContent: 'center', alignItems: 'center'}}>
             <View style={{height: '50%', width: '100%', justifyContent: 'center', alignItems: 'center'}}>
-              <Text style={{fontSize: 18}}>
+              <Text style={{fontSize: 18, color: 'red'}}>
                 Webview - Homepage
               </Text>
               <Text style={{fontSize: 16}}>
@@ -24,7 +24,7 @@ export default HomePage = ({ navigation }) => {
               <TouchableOpacity onPress = {() => {
                 navigation.navigate("Page1");
                 }}>
-                  <Text>
+                  <Text style={{fontSize: 16}}>
                       Touch go to page 1
                   </Text>
               </TouchableOpacity>

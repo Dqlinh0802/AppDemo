@@ -1,31 +1,37 @@
-import React,{Component} from 'react';
-import {
-    View,
-    Text,
-    SafeAreaView,
-    TouchableOpacity
-} from 'react-native'
+import React from 'react';
+import {StyleSheet, View, Text, Image, TouchableOpacity, Button} from 'react-native';
+import AppIntroSlider from 'react-native-app-intro-slider';
+import { NavigationContainer } from '@react-navigation/native';
+//import style
+import styles from "./Styles1"
 
-export default History = () => {
-    return(
-        <SafeAreaView style={{height: '100%', width: '100%', backgroundColor: '#fca788'}}>
-          <View style={{height: '100%', width: '100%', justifyContent: 'center', alignItems: 'center'}}>
-            <View style={{height: '50%', width: '100%', justifyContent: 'flex-end', alignItems: 'center'}}>
-              <Text style={{fontSize: 18}}>
-                Webview - Page2
-              </Text>
-              <Text style={{fontSize: 16}}>
-                Link: page1.html
-              </Text>
+export default class History extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          history: false,
+        };
+    }
+    render() {
+        if (this.state.history) {
+          return <App />;
+        } else {
+          return (
+            <View style={styles.container}>
+                <Text style={styles.title}>
+                    WebView - History
+                </Text>
+                <Text style={styles.link}>
+                    link: History.html 
+                </Text>
+                <TouchableOpacity style={styles.btn} onPress = {() => {
+                    this.props.navigation.navigate("Page2");}}>
+                    <Text  style={styles.txt}>
+                        Touch to go Page 2
+                    </Text>
+                </TouchableOpacity> 
             </View>
-            <View style={{height: '50%', width: '100%', justifyContent: 'flex-start', alignItems: 'center'}}>
-              <TouchableOpacity>
-                  <Text>
-                      Touch go to page 2
-                  </Text>
-              </TouchableOpacity>
-            </View>
-          </View>   
-        </SafeAreaView>
-    )
+          );
+        }
+      }
 }

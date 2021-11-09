@@ -37,7 +37,7 @@ export default class IntroComponent extends React.Component {
   _renderDoneButton = () => {
     return (
         <TouchableOpacity style={styles.buttonCircle} onPress = {() => {
-            this.props.navigation.navigate("Home");
+            this.props.navigation.navigate("Screen1");
             this.setState({isBottomShert: true});
             }}>
             <Text  style={{fontSize: 18, color: 'black'}}>Start</Text>

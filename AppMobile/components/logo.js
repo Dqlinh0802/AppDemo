@@ -7,7 +7,10 @@ import {
 } from 'react-native'
 
 
-export default Screen1 = () => {
+export default Screen1 = props => {
+    setTimeout(() => {
+      props.navigation.replace("Home");
+    }, 2000);
     return(
         <SafeAreaView style={{height: '100%', width: '100%', backgroundColor: '#baffec'}}>
           <View style={{height: '100%', width: '100%', justifyContent: 'center', alignItems: 'center'}}>
