@@ -5,17 +5,29 @@ import {
     SafeAreaView,
     TouchableOpacity
 } from 'react-native'
-import IntroComponent from './intro'
-import Screen1 from './logo'
-import Page1 from './Page1'
-import Page2 from './Page2'
-import Page3 from './Page3'
-import History from './History'
-import Messages from './Messages'
-import HomePage from './HomePage'
-import Account from './Account'
-import vnexpress1 from './vnexpress1'
-import vnexpress2 from './vnexpress2'
+// import IntroComponent from './intro'
+// import Screen1 from './logo'
+// import Page1 from './Page1'
+// import Page2 from './Page2'
+// import Page3 from './Page3'
+// import History from './History'
+// import Messages from './Messages'
+// import HomePage from './HomePage'
+// import Account from './Account'
+// import vnexpress1 from './vnexpress1'
+// import vnexpress2 from './vnexpress2'
+import {
+    IntroComponent, 
+    Screen1, 
+    Page1, 
+    Page2, 
+    Page3, 
+    History, 
+    Messages, 
+    HomePage, 
+    Account, 
+    vnexpress1, 
+    vnexpress2} from './screens'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';

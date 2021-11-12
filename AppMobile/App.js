@@ -26,7 +26,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import IntroComponent from './components/intro'
+// import {IntroComponent} from './components/screens'
 import RootComponent from './components/main'
 
 const App: () => Node = () => {
